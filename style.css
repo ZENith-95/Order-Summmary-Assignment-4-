@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: redhat;
+  src: url(./Assets/RedHatDisplay-Regular.ttf);
+}
+
+body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  /* padding-top: 100px; */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  height: 70vh;
+  width: 100vw;
+  background: url(./Assets/images/pattern-background-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  /* transform: scaleY(-1); */
+  /* background-color: hsla(224, 23%, 55%, 0.103); */
+}
+
+.main {
+  height: 150vh;
+  width: 100vw;
+  position: relative;
+  background-color: hsla(225, 67%, 96%, 0.705);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.main .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-items: center; */
+  align-items: center;
+  background-color: white;
+  margin-top: 150px;
+  width: 450px;
+  border-radius: 20px;
+  box-shadow: 1px 1px hsla(245, 75%, 52%, 0.068);
+  font-family: redhat;
+  height: 700px;
+}
+
+.main .card #illus {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  /* margin-bottom: 10px; */
+}
+
+.main .card .card-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px;
+}
+
+.main .card .card-cont h1 {
+  font-size: 30px;
+  font-weight: 900;
+  /* margin-bottom: 20px; */
+}
+
+.main .card .card-cont p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(240, 16%, 57%);
+}
+
+.main .card .card-cont .para {
+  padding: 30px;
+}
+
+.main .card .card-cont .p-plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin: 0px 50px 30px 50px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: hsla(227, 70%, 96%, 0.39);
+}
+
+.main .card .card-cont .anp {
+  display: flex;
+  gap: 20px;
+}
+
+.main .card .card-cont .p-plan h4 {
+  color: hsl(256, 91%, 46%);
+  text-decoration: underline;
+}
+
+.main .card .card-cont .payment {
+  width: 100%;
+  height: 50px;
+  background-color: hsl(256, 91%, 46%);
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 1px 20px 1px hsla(258, 56%, 58%, 0.075);
+}
+
+.main .card .card-cont .payment #paym {
+  width: 100%;
+  height: 50px;
+  background-color: hsl(256, 91%, 46%);
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+}
+
+.main .card .card-cont .cancel {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.main .card .card-cont .cancel #canc {
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-radius: 15px;
+  color: hsl(240, 16%, 57%);
+  font-weight: 900;
+}
