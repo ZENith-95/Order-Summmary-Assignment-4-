@@ -140,6 +140,7 @@ body::before {
 
 .main .card .card-cont .payment #paym:hover{
   background-color: hsl(251, 49%, 62%);
+  cursor: pointer;
 }
 
 .main .card .card-cont .cancel {
@@ -164,6 +165,7 @@ body::before {
 
 .main .card .card-cont .cancel #canc:hover{
 color: black;
+cursor: pointer;
 }
 
 
