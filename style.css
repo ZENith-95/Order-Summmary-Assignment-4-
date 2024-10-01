@@ -31,9 +31,9 @@ body::before {
 }
 
 .main {
-  height: 150vh;
+  /* height: 150vh; */
   width: 100vw;
-  position: relative;
+  /* position: relative; */
   background-color: hsla(225, 67%, 96%, 0.705);
   display: flex;
   align-content: center;
@@ -104,9 +104,16 @@ body::before {
   gap: 20px;
 }
 
-.main .card .card-cont .p-plan h4 {
+.main .card .card-cont .p-plan a{
+   color: hsl(256, 91%, 46%);
+   font-weight: 800;
+}
+
+.main .card .card-cont .p-plan a:hover{
   color: hsl(256, 91%, 46%);
-  text-decoration: underline;
+  text-decoration: none;
+  font-weight: 900;
+  
 }
 
 .main .card .card-cont .payment {
@@ -116,17 +123,23 @@ body::before {
   border-radius: 15px;
   margin-bottom: 30px;
   box-shadow: 1px 20px 1px hsla(258, 56%, 58%, 0.075);
+  font-family: inherit;
 }
 
-.main .card .card-cont .payment #paym {
+.main .card .card-cont .payment #paym{
   width: 100%;
   height: 50px;
   background-color: hsl(256, 91%, 46%);
   border-radius: 15px;
   color: white;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 900;
   border: none;
+  font-family: redhat;
+}
+
+.main .card .card-cont .payment #paym:hover{
+  background-color: hsl(251, 49%, 62%);
 }
 
 .main .card .card-cont .cancel {
@@ -137,7 +150,7 @@ body::before {
 }
 
 .main .card .card-cont .cancel #canc {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   border: none;
   width: 100%;
@@ -146,4 +159,12 @@ body::before {
   border-radius: 15px;
   color: hsl(240, 16%, 57%);
   font-weight: 900;
+  font-family: inherit;
 }
+
+.main .card .card-cont .cancel #canc:hover{
+color: black;
+}
+
+
+
